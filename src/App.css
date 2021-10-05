@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -26,13 +26,198 @@
 
 .App-link {
   color: #61dafb;
-}
+} */
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	display: flex;
+	/* height: 90vh; */
+}
+
+.button-container {
+	position: relative;
+	max-width: 95%;
+	display: block;
+	/* background-color: blue; */
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Raleway", sans-serif;
+	font-size: 18px;
+}
+
+.btn {
+	margin: 2rem;
+	border: none;
+	background: #fff;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	text-decoration: none;
+	color: #333333;
+}
+
+.button-container .btn span {
+	margin-right: 0.4rem;
+}
+
+.spin {
+	animation: App-logo-spin infinite 1s linear;
+}
+
+.body-container {
+	display: flex;
+	flex-direction: column;
+	max-width: 750px;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.quote-container {
+	padding-left: 100px;
+	border-left: 0.4rem solid #f7df94;
+	margin-top: 5rem;
+	/* margin-left: 1rem; */
+}
+
+.quote-container p {
+	font-family: "Raleway", sans-serif;
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.author-btn-container {
+	/* background-color: aqua; */
+	width: 100%;
+	padding: 50px 30px 20px 80px;
+}
+
+.author-btn-container a {
+	text-decoration: none;
+	font-family: "Raleway", sans-serif;
+	width: 100%;
+	/* margin-left: 100px; */
+}
+
+.author-container {
+	/* background-color: blue; */
+	padding: 3.2rem 1.5rem;
+
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	transition: all 0.2s linear;
+}
+
+.author {
+	color: #4f4f4f;
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 0.3rem;
+}
+
+.genre {
+	color: #828282;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.arrow-icon {
+	color: #fff;
+}
+
+.author-container:hover .arrow-icon {
+	color: #f2f2f2;
+}
+
+.author-container:hover {
+	background-color: #333333;
+}
+
+.author-container:hover .author {
+	color: #f2f2f2;
+}
+
+.author-container:hover .genre {
+	color: #828282;
+}
+
+.author-name {
+	width: 100%;
+}
+
+.author-quote-container {
+	/* background-color: aqua; */
+	width: 100%;
+	/* margin-top: 100px; */
+	margin: 18rem 0 -3rem 0;
+	padding: 50px 30px 20px 80px;
+}
+
+.authorquote-container {
+	/* background-color: blue; */
+	padding: 3.2rem 1.5rem;
+
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	transition: all 0.2s linear;
+}
+
+/* .authorquote-container p {
+
+} */
+
+.authorQuotes-container {
+	display: flex;
+	flex-direction: column;
+	max-width: 800px;
+	margin: auto;
+	padding: 0 1rem;
+}
+
+.authorName-container {
+	margin-top: 6rem;
+	padding-left: 101px;
+}
+
+.authorName-container p {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 2.1rem;
+	line-height: 2.6rem;
+
+	color: #333333;
+}
+
+.authorQuotes-container div .quote-container p {
+  font-size: 1.9rem;
 }
