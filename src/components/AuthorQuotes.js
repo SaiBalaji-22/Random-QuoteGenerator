@@ -14,6 +14,7 @@ function AuthorQuotes({ data }) {
 			// console.log(res.data.data);
 			setAuthorQuoteData(res.data.data);
 		});
+		// eslint-disable-next-line
 	}, []);
 
 	return (
